@@ -4,7 +4,7 @@ navbar: Blog
 ---
 
 <div class="row">
-  <div class="page-content {% unless site.default_asides == empty and site.blog_index_asides == empty %}col-md-9{% else %}col-md-12{% endunless %}">
+  <div class="page-content {% unless site.default_asides == empty and site.blog_index_asides == empty %}col-md-8{% else %}col-md-12{% endunless %}">
     <div class="blog-index" itemscope itemtype="http://schema.org/Blog">
     <meta itemprop="name" content="{{site.title}}" />
     {% if site.description %}<meta itemprop="description" content="{{site.description}}" />{% endif %}
@@ -24,7 +24,6 @@ navbar: Blog
       {% else %}
         <li class="previous disabled"><a href="#">&larr;&nbsp;Older</a></li>
       {% endif %}
-      <li><a href="/blog/archives">Blog Archives</a></li>
       {% if paginator.previous_page %}
         <li class="next"><a href="{{paginator.previous_page_path}}">Newer&nbsp;&rarr;</a></li>
       {% else %}
@@ -34,7 +33,7 @@ navbar: Blog
   </div>
 
   {% unless site.default_asides == empty and site.blog_index_asides == empty %}
-    <aside class="sidebar col-md-3">
+    <aside class="sidebar col-md-4">
       {% if site.blog_index_asides.size %}
         {% include_array blog_index_asides %}
       {% else %}
