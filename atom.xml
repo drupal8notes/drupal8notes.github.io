@@ -4,7 +4,7 @@
   <title><![CDATA[Drupal 8 Notes]]></title>
   <link href="http://drupal8notes.github.io/atom.xml" rel="self"/>
   <link href="http://drupal8notes.github.io/"/>
-  <updated>2014-10-30T14:29:11-05:00</updated>
+  <updated>2014-10-30T14:45:36-05:00</updated>
   <id>http://drupal8notes.github.io/</id>
   <author>
     <name><![CDATA[Arshad Chummun]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Exclude or Remove Stylesheets Added by Core or Other Modules]]></title>
+    <link href="http://drupal8notes.github.io/how-to-exclude-or-remove-stylesheets-added-by-core-or-other-modules/"/>
+    <updated>2014-10-30T14:42:52-05:00</updated>
+    <id>http://drupal8notes.github.io/how-to-exclude-or-remove-stylesheets-added-by-core-or-other-modules</id>
+    <content type="html"><![CDATA[<p>In Drupal 8, you can easily remove stylesheets added by core, other modules or themes from your custom theme.</p>
+
+<p>Simply add the following lines to your THEMENAME.info.yml file</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>stylesheets-remove:
+</span><span class='line'>  - system.theme.css
+</span><span class='line'>  - name-of-another-stylesheet.css</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Current Logged in User in Drupal 8]]></title>
