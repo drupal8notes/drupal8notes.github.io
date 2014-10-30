@@ -7,22 +7,22 @@ sharing: true
 footer: true
 ---
 
-#### Step 1: [Click here](https://github.com/drupal8notes/_posts/fork) to fork the _posts repository.
+##### Step 1: [Click here](https://github.com/drupal8notes/_posts/fork) to fork the _posts repository.
 
-#### Step 2: Run the following code to create a new branch:
+##### Step 2: Run the following code to create a new branch:
 
 ```
 $ cd _posts
 $ git checkout -b name-of-your-branch
 ```
 
-#### Step 3: Create a new file for your post:
+##### Step 3: Create a new file for your post:
 
 ```
 $ touch YYYY-MM-DD-title-of-your-post.markdown
 ```
 
-#### Step 4: Add the following to your new file:
+##### Step 4: Add the following to your new file:
 
 ```
 ---
@@ -35,7 +35,7 @@ comments: true
 Add content here
 ```
 
-#### Step 5: Commit and push.
+##### Step 5: Commit and push.
 
-#### Step 6: Create a pull request.
+##### Step 6: Create a pull request.
 

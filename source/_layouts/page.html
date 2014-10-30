@@ -7,9 +7,6 @@ layout: default
     <article role="article">
       {% unless page.no_header %}
         <header class="page-header">
-          {% if page.date %}
-            <p class="meta text-muted text-uppercase">{% include post/date.html %}{{ time }}</p>
-          {% endif %}
           {% if page.title %}
             <h1 class="entry-title">
               {% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
@@ -27,11 +24,6 @@ layout: default
       </div>
       {% unless page.footer == false %}
         <footer>
-          {% if page.date or page.author %}<p class="meta text-muted">
-            {% if page.author %}{% include post/author.html %}{% endif %}
-            {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
-            {% if page.categories %}{% include post/categories.html %}{% endif %}
-          </p>{% endif %}
           {% unless page.sharing == false %}
             {% include post/sharing.html %}
           {% endunless %}
