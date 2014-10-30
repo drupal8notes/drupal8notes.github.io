@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://drupal8notes.github.io/how-to-enable-debug-mode-for-twig/</loc>
+    <lastmod>2014-10-30T23:26:48-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://drupal8notes.github.io/current-logged-in-user-in-drupal-8/</loc>
+    <lastmod>2014-10-30T00:54:20-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://drupal8notes.github.io/how-to-check-for-user-access-in-drupal-8/</loc>
+    <lastmod>2014-10-30T00:50:17-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://drupal8notes.github.io/how-to-set-active-links-for-menu-items/</loc>
+    <lastmod>2014-10-30T00:37:39-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://drupal8notes.github.io/current-path-in-drupal-8/</loc>
+    <lastmod>2014-10-29T23:26:48-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://drupal8notes.github.io/blog/archives/</loc>
+    <lastmod>2014-10-30T11:39:17-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://drupal8notes.github.io/</loc>
+    <lastmod>2014-10-30T11:39:17-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://drupal8notes.github.io/contribute/</loc>
+    <lastmod>2014-10-30T11:39:17-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
