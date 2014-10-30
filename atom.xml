@@ -4,7 +4,7 @@
   <title><![CDATA[Drupal 8 Notes]]></title>
   <link href="http://drupal8notes.github.io/atom.xml" rel="self"/>
   <link href="http://drupal8notes.github.io/"/>
-  <updated>2014-10-30T13:58:25-05:00</updated>
+  <updated>2014-10-30T14:06:59-05:00</updated>
   <id>http://drupal8notes.github.io/</id>
   <author>
     <name><![CDATA[Arshad Chummun]]></name>
@@ -98,7 +98,7 @@
     <link href="http://drupal8notes.github.io/current-path-in-drupal-8/"/>
     <updated>2014-10-29T23:26:48-05:00</updated>
     <id>http://drupal8notes.github.io/current-path-in-drupal-8</id>
-    <content type="html"><![CDATA[<figure class='code'><figcaption><span>How to get the current path in Drupal 8</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+    <content type="html"><![CDATA[<figure class='code'><figcaption><span>How to get the current path</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$current_path</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">request</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getRequestUri</span><span class="p">();</span>
 </span></code></pre></td></tr></table></div></figure>
 
