@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Drupal 8 Notes</title>
+  <title>How to Set Active Links for Menu Items - Drupal 8 Notes</title>
   <meta name="author" content="Arshad Chummun">
 
   
@@ -14,15 +14,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://drupal8notes.github.io">
+  <link rel="canonical" href="http://drupal8notes.github.io/how-to-set-active-links-for-menu-items">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/drupal8notes/atom.xml" rel="alternate" title="Drupal 8 Notes" type="application/atom+xml">
 
   <!-- http://opengraphprotocol.org/ -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://drupal8notes.github.io">
-  <meta property="og:title" content="Drupal 8 Notes">
+  <meta property="og:url" content="http://drupal8notes.github.io/how-to-set-active-links-for-menu-items">
+  <meta property="og:title" content="How to Set Active Links for Menu Items - Drupal 8 Notes">
   
 
   <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
@@ -91,16 +91,12 @@
       <div id="main" role="main" class="container">
         <div id="content">
           <div class="row">
-  <div class="page-content col-md-9">
-    <div class="blog-index" itemscope itemtype="http://schema.org/Blog">
+  <div class="page-content col-md-7" itemscope itemtype="http://schema.org/Blog">
     <meta itemprop="name" content="Drupal 8 Notes" />
     
     <meta itemprop="url" content="http://drupal8notes.github.io" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
       
-      
-      
-        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-          
   <header class="page-header">
     
       <p class="meta text-muted text-uppercase">
@@ -108,74 +104,15 @@
       </p>
     
     
-      <h2 class="entry-title" itemprop="name headline"><a href="/current-logged-in-user-in-drupal-8/" itemprop="url">Current Logged in User in Drupal 8</a></h2>
-    
-  </header>
-
-
-  <div class="entry-content clearfix" itemprop="articleBody description"><figure class='code'><figcaption><span>How to get the current logged in user in Drupal 8</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$user</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">currentUser</span><span class="p">();</span>
-</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-        </article>
-      
-      
-        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
+    <h1 class="entry-title" itemprop="name headline">
+        How to Set Active Links for Menu Items
         
-      </p>
-    
-    
-      <h2 class="entry-title" itemprop="name headline"><a href="/how-to-check-for-user-access-in-drupal-8/" itemprop="url">How to Check for User Access or Permission in Drupal 8</a></h2>
+    </h1>
     
   </header>
 
 
-  <div class="entry-content clearfix" itemprop="articleBody description"><p>In Drupal 7, you would use the user_access function to check for user access. Here&rsquo;s how to do it in Drupal 8.</p>
-
-<figure class='code'><figcaption><span>How to check for permission in Drupal 8</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="c1">// Get the current user</span>
-</span><span class='line'><span class="nv">$user</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">currentUser</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Check for permission</span>
-</span><span class='line'><span class="nv">$user</span><span class="o">-&gt;</span><span class="na">hasPermission</span><span class="p">(</span><span class="s1">&#39;access administration menu&#39;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-        </article>
-      
-      
-        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-      </p>
-    
-    
-      <h2 class="entry-title" itemprop="name headline"><a href="/how-to-set-active-links-for-menu-items/" itemprop="url">How to Set Active Links for Menu Items</a></h2>
-    
-  </header>
-
-
-  <div class="entry-content clearfix" itemprop="articleBody description"><p>In your THEMENAME.theme file, add the following code:</p>
+<div class="entry-content clearfix" itemprop="articleBody description"><p>In your THEMENAME.theme file, add the following code:</p>
 
 <figure class='code'><figcaption><span>Implements hook_preprocess_menu()</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -214,79 +151,43 @@
 </span></code></pre></td></tr></table></div></figure>
 
 </div>
-  
-  
 
 
-        </article>
-      
-      
-        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
+      <footer>
         
-      </p>
-    
-    
-      <h2 class="entry-title" itemprop="name headline"><a href="/current-path-in-drupal-8/" itemprop="url">How to Get the Current Path in Drupal 8</a></h2>
-    
-  </header>
-
-
-  <div class="entry-content clearfix" itemprop="articleBody description"><figure class='code'><figcaption><span>How to get the current path in Drupal 8</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$current_path</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">request</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getRequestUri</span><span class="p">();</span>
-</span></code></pre></td></tr></table></div></figure>
-
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8notes.github.io/how-to-set-active-links-for-menu-items/" data-via="" data-counturl="http://drupal8notes.github.io/how-to-set-active-links-for-menu-items/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
-
-        </article>
-      
-    </div>
-
-    <ul class="pager">
-      
-        <li class="previous disabled"><a href="#">&larr;&nbsp;Older</a></li>
-      
-      <li><a href="/blog/archives">Blog Archives</a></li>
-      
-        <li class="next disabled"><a href="#">Newer&nbsp;&rarr;</a></li>
-      
-    </ul>
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/current-path-in-drupal-8/" title="Previous Post: How to get the current path in Drupal 8">&laquo; How to get the current path in Drupal 8</a></li>
+            
+            
+            <li class="next"><a href="/how-to-check-for-user-access-in-drupal-8/" title="Next Post: How to check for user access or permission in Drupal 8">How to check for user access or permission in Drupal 8 &raquo;</a></li>
+            
+          </ul>
+        
+      </footer>
+    </article>
   </div>
 
   
-    <aside class="sidebar col-md-3">
+  <aside class="sidebar col-md-5">
       
-        <section class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Recent Posts</h3>
-  </div>
-  
-  <div id="recent_posts" class="list-group">
-    
-    <a class="list-group-item " href="/current-logged-in-user-in-drupal-8/">Current Logged in User in Drupal 8</a>
-    
-    <a class="list-group-item " href="/how-to-check-for-user-access-in-drupal-8/">How to Check for User Access or Permission in Drupal 8</a>
-    
-    <a class="list-group-item " href="/how-to-set-active-links-for-menu-items/">How to Set Active Links for Menu Items</a>
-    
-    <a class="list-group-item " href="/current-path-in-drupal-8/">How to Get the Current Path in Drupal 8</a>
-    
-  </div>
-</section>
-
-
-
-
-
-
+      <section>
+          <h2>Comments</h2>
+          <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+      </section>
       
-    </aside>
+  </aside>
   
 </div>
 
@@ -308,7 +209,10 @@
       var disqus_shortname = 'drupal8notes';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://drupal8notes.github.io/how-to-set-active-links-for-menu-items/';
+        var disqus_url = 'http://drupal8notes.github.io/how-to-set-active-links-for-menu-items/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

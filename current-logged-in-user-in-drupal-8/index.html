@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Drupal 8 Notes</title>
+  <title>Current Logged in User in Drupal 8 - Drupal 8 Notes</title>
   <meta name="author" content="Arshad Chummun">
 
   
@@ -14,15 +14,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://drupal8notes.github.io/blog/archives">
+  <link rel="canonical" href="http://drupal8notes.github.io/current-logged-in-user-in-drupal-8">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/drupal8notes/atom.xml" rel="alternate" title="Drupal 8 Notes" type="application/atom+xml">
 
   <!-- http://opengraphprotocol.org/ -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://drupal8notes.github.io/blog/archives">
-  <meta property="og:title" content="Blog Archive - Drupal 8 Notes">
+  <meta property="og:url" content="http://drupal8notes.github.io/current-logged-in-user-in-drupal-8">
+  <meta property="og:title" content="Current Logged in User in Drupal 8 - Drupal 8 Notes">
   
 
   <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
@@ -91,172 +91,67 @@
       <div id="main" role="main" class="container">
         <div id="content">
           <div class="row">
-  <div class="page-content col-md-8">
-    <article role="article">
+  <div class="page-content col-md-7" itemscope itemtype="http://schema.org/Blog">
+    <meta itemprop="name" content="Drupal 8 Notes" />
+    
+    <meta itemprop="url" content="http://drupal8notes.github.io" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
       
-        <header class="page-header">
-          
-          
-            <h1 class="entry-title">
-              Blog Archive
-              
-            </h1>
-          
-        </header>
-      
-      <div class="entry-content">
-        <div id="blog-archives" itemscope itemtype="http://schema.org/Blog">
-<meta itemprop="name" content="Drupal 8 Notes" />
-
-<meta itemprop="url" content="http://drupal8notes.github.io" />
-
-
-
-  
-  <h2 class="year">2014</h2>
-
-<article class="page-header" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  
-<h2 class="post-title" itemprop="name headline"><a href="/current-logged-in-user-in-drupal-8/" itemprop="url">Current Logged in User in Drupal 8</a></h2>
-<p class="meta text-muted">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-30T00:54:20-05:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
-  
-
-
-</p>
-
-</article>
-
-
-
-<article class="page-header" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  
-<h2 class="post-title" itemprop="name headline"><a href="/how-to-check-for-user-access-in-drupal-8/" itemprop="url">How to Check for User Access or Permission in Drupal 8</a></h2>
-<p class="meta text-muted">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-30T00:50:17-05:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
-  
-
-
-</p>
-
-</article>
-
-
-
-<article class="page-header" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  
-<h2 class="post-title" itemprop="name headline"><a href="/how-to-set-active-links-for-menu-items/" itemprop="url">How to Set Active Links for Menu Items</a></h2>
-<p class="meta text-muted">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-30T00:37:39-05:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
-  
-
-
-</p>
-
-</article>
-
-
-
-<article class="page-header" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  
-<h2 class="post-title" itemprop="name headline"><a href="/current-path-in-drupal-8/" itemprop="url">How to Get the Current Path in Drupal 8</a></h2>
-<p class="meta text-muted">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-29T23:26:48-05:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
-  
-
-
-</p>
-
-</article>
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
+    <h1 class="entry-title" itemprop="name headline">
+        Current Logged in User in Drupal 8
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix" itemprop="articleBody description"><figure class='code'><figcaption><span>How to get the current logged in user in Drupal 8</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$user</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">currentUser</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
 
 </div>
 
-      </div>
-      
+
+      <footer>
+        
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8notes.github.io/current-logged-in-user-in-drupal-8/" data-via="" data-counturl="http://drupal8notes.github.io/current-logged-in-user-in-drupal-8/" >Tweet</a>
+  
+  
+  
+</div>
+
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/how-to-check-for-user-access-in-drupal-8/" title="Previous Post: How to check for user access or permission in Drupal 8">&laquo; How to check for user access or permission in Drupal 8</a></li>
+            
+            
+          </ul>
+        
+      </footer>
     </article>
-    
   </div>
 
   
-    <aside class="sidebar col-md-4">
+  <aside class="sidebar col-md-5">
       
-        <section class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Recent Posts</h3>
-  </div>
-  
-  <div id="recent_posts" class="list-group">
-    
-    <a class="list-group-item " href="/current-logged-in-user-in-drupal-8/">Current Logged in User in Drupal 8</a>
-    
-    <a class="list-group-item " href="/how-to-check-for-user-access-in-drupal-8/">How to Check for User Access or Permission in Drupal 8</a>
-    
-    <a class="list-group-item " href="/how-to-set-active-links-for-menu-items/">How to Set Active Links for Menu Items</a>
-    
-    <a class="list-group-item " href="/current-path-in-drupal-8/">How to Get the Current Path in Drupal 8</a>
-    
-  </div>
-</section>
-
-
-
-
-
-
+      <section>
+          <h2>Comments</h2>
+          <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+      </section>
       
-    </aside>
+  </aside>
   
 </div>
 
@@ -278,7 +173,10 @@
       var disqus_shortname = 'drupal8notes';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://drupal8notes.github.io/current-logged-in-user-in-drupal-8/';
+        var disqus_url = 'http://drupal8notes.github.io/current-logged-in-user-in-drupal-8/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
