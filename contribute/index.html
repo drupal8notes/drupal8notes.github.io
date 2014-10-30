@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Drupal 8 Notes</title>
+  <title>How to Contribute - Drupal 8 Notes</title>
   <meta name="author" content="Arshad Chummun">
 
   
@@ -14,15 +14,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://drupal8notes.github.io/blog/archives">
+  <link rel="canonical" href="http://drupal8notes.github.io/contribute">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/drupal8notes/atom.xml" rel="alternate" title="Drupal 8 Notes" type="application/atom+xml">
 
   <!-- http://opengraphprotocol.org/ -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://drupal8notes.github.io/blog/archives">
-  <meta property="og:title" content="Blog Archive - Drupal 8 Notes">
+  <meta property="og:url" content="http://drupal8notes.github.io/contribute">
+  <meta property="og:title" content="How to Contribute - Drupal 8 Notes">
   
 
   <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
@@ -97,159 +97,61 @@
         <header class="page-header">
           
             <h1 class="entry-title">
-              Blog Archive
+              How to Contribute
               
             </h1>
           
         </header>
       
       <div class="entry-content">
-        <div id="blog-archives" itemscope itemtype="http://schema.org/Blog">
-<meta itemprop="name" content="Drupal 8 Notes" />
+        <h4>Step 1: <a href="https://github.com/drupal8notes/drupal8notes.github.io/fork">Click here</a> to fork this repo on Github.</h4>
 
-<meta itemprop="url" content="http://drupal8notes.github.io" />
+<h4>Step 2: Clone your fork locally.</h4>
 
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone -b source git@github.com:USERNAME/drupal8notes.github.io</span></code></pre></td></tr></table></div></figure>
 
 
-  
-  <h2 class="year">2014</h2>
+<h4>Step 3: Run the following commands to create a new branch and install dependencies:</h4>
 
-<article class="page-header" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  
-<h2 class="post-title" itemprop="name headline"><a href="/how-to-enable-debug-mode-for-twig/" itemprop="url">How to Enable Debug Mode for Twig</a></h2>
-<p class="meta text-muted">
-  
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git checkout -b added-new-post-about-twig
+</span><span class='line'>$ cd drupal8notes.github.io
+</span><span class='line'>$ bundle install</span></code></pre></td></tr></table></div></figure>
 
 
+<h4>Step 4: Create a new post</h4>
 
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ bundle exec rake new_post</span></code></pre></td></tr></table></div></figure>
 
 
+<h4>Step 5: Write your post in markdown under source/_posts/name-of-your-post.markdown</h4>
 
+<h4>Step 6: Commit your changes and push.</h4>
 
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git push origin -b added-new-post-about-twig</span></code></pre></td></tr></table></div></figure>
 
 
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-30T23:26:48-05:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
-  
-
-
-</p>
-
-</article>
-
-
-
-<article class="page-header" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  
-<h2 class="post-title" itemprop="name headline"><a href="/current-logged-in-user-in-drupal-8/" itemprop="url">Current Logged in User in Drupal 8</a></h2>
-<p class="meta text-muted">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-30T00:54:20-05:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
-  
-
-
-</p>
-
-</article>
-
-
-
-<article class="page-header" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  
-<h2 class="post-title" itemprop="name headline"><a href="/how-to-check-for-user-access-in-drupal-8/" itemprop="url">How to Check for User Access or Permission in Drupal 8</a></h2>
-<p class="meta text-muted">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-30T00:50:17-05:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
-  
-
-
-</p>
-
-</article>
-
-
-
-<article class="page-header" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  
-<h2 class="post-title" itemprop="name headline"><a href="/how-to-set-active-links-for-menu-items/" itemprop="url">How to Set Active Links for Menu Items</a></h2>
-<p class="meta text-muted">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-30T00:37:39-05:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
-  
-
-
-</p>
-
-</article>
-
-
-
-<article class="page-header" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  
-<h2 class="post-title" itemprop="name headline"><a href="/current-path-in-drupal-8/" itemprop="url">Current Path in Drupal 8</a></h2>
-<p class="meta text-muted">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-29T23:26:48-05:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
-  
-
-
-</p>
-
-</article>
-
-</div>
+<h4>Step 7: Create a pull request.</h4>
 
       </div>
+      
+        <footer>
+          
+            <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8notes.github.io/contribute/index.html" data-via="" data-counturl="http://drupal8notes.github.io/contribute/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+          
+        </footer>
       
     </article>
     
@@ -301,19 +203,6 @@
 </div>
 </footer>
     
-
-<script type="text/javascript">
-      var disqus_shortname = 'drupal8notes';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 

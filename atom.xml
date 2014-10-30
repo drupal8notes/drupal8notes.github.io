@@ -4,7 +4,7 @@
   <title><![CDATA[Drupal 8 Notes]]></title>
   <link href="http://drupal8notes.github.io/atom.xml" rel="self"/>
   <link href="http://drupal8notes.github.io/"/>
-  <updated>2014-10-30T10:58:46-05:00</updated>
+  <updated>2014-10-30T11:39:17-05:00</updated>
   <id>http://drupal8notes.github.io/</id>
   <author>
     <name><![CDATA[Arshad Chummun]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Enable Debug Mode for Twig]]></title>
+    <link href="http://drupal8notes.github.io/how-to-enable-debug-mode-for-twig/"/>
+    <updated>2014-10-30T23:26:48-05:00</updated>
+    <id>http://drupal8notes.github.io/how-to-enable-debug-mode-for-twig</id>
+    <content type="html"><![CDATA[<p>Under services.yml, set debug to true.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Current Logged in User in Drupal 8]]></title>
