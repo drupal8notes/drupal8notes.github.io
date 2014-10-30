@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="row">
-  <div class="page-content {% unless page.sidebar == false or site.page_asides == empty and site.default_asides == empty %}col-md-7{% else %}col-md-12{% endunless %}">
+  <div class="page-content {% unless page.sidebar == false or site.page_asides == empty and site.default_asides == empty %}col-md-8{% else %}col-md-12{% endunless %}">
     <article role="article">
       {% unless page.no_header %}
         <header class="page-header">
@@ -47,7 +47,7 @@ layout: default
   </div>
 
   {% unless page.sidebar == false or site.page_asides == empty and site.default_asides == empty %}
-    <aside class="sidebar col-md-5">
+    <aside class="sidebar col-md-4">
       {% if site.page_asides.size %}
         {% include_array page_asides %}
       {% else %}
