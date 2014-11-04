@@ -4,7 +4,7 @@
   <title><![CDATA[Drupal 8 Notes]]></title>
   <link href="http://drupal8notes.github.io/atom.xml" rel="self"/>
   <link href="http://drupal8notes.github.io/"/>
-  <updated>2014-11-02T21:39:01-06:00</updated>
+  <updated>2014-11-03T20:16:19-08:00</updated>
   <id>http://drupal8notes.github.io/</id>
   <author>
     <name><![CDATA[Arshad Chummun]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[How to Exclude or Remove Stylesheets Added by Core or Other Modules]]></title>
     <link href="http://drupal8notes.github.io/how-to-exclude-or-remove-stylesheets-added-by-core-or-other-modules/"/>
-    <updated>2014-10-30T14:42:52-05:00</updated>
+    <updated>2014-10-30T12:42:52-07:00</updated>
     <id>http://drupal8notes.github.io/how-to-exclude-or-remove-stylesheets-added-by-core-or-other-modules</id>
     <content type="html"><![CDATA[<p>In Drupal 8, you can easily remove stylesheets added by core, other modules or themes from your custom theme.</p>
 
@@ -35,7 +35,7 @@
   <entry>
     <title type="html"><![CDATA[Current Logged in User in Drupal 8]]></title>
     <link href="http://drupal8notes.github.io/current-logged-in-user-in-drupal-8/"/>
-    <updated>2014-10-30T00:54:20-05:00</updated>
+    <updated>2014-10-29T22:54:20-07:00</updated>
     <id>http://drupal8notes.github.io/current-logged-in-user-in-drupal-8</id>
     <content type="html"><![CDATA[<figure class='code'><figcaption><span>How to get the current logged in user in Drupal 8</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$user</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">currentUser</span><span class="p">();</span>
@@ -47,7 +47,7 @@
   <entry>
     <title type="html"><![CDATA[How to Check for User Access or Permission in Drupal 8]]></title>
     <link href="http://drupal8notes.github.io/how-to-check-for-user-access-in-drupal-8/"/>
-    <updated>2014-10-30T00:50:17-05:00</updated>
+    <updated>2014-10-29T22:50:17-07:00</updated>
     <id>http://drupal8notes.github.io/how-to-check-for-user-access-in-drupal-8</id>
     <content type="html"><![CDATA[<p>In Drupal 7, you would use the user_access function to check for user access. Here&rsquo;s how to do it in Drupal 8.</p>
 
@@ -69,7 +69,7 @@
   <entry>
     <title type="html"><![CDATA[How to Set Active Links for Menu Items]]></title>
     <link href="http://drupal8notes.github.io/how-to-set-active-links-for-menu-items/"/>
-    <updated>2014-10-30T00:37:39-05:00</updated>
+    <updated>2014-10-29T22:37:39-07:00</updated>
     <id>http://drupal8notes.github.io/how-to-set-active-links-for-menu-items</id>
     <content type="html"><![CDATA[<p>In your THEMENAME.theme file, add the following code:</p>
 
@@ -115,7 +115,7 @@
   <entry>
     <title type="html"><![CDATA[How to Get the Current Path in Drupal 8]]></title>
     <link href="http://drupal8notes.github.io/current-path-in-drupal-8/"/>
-    <updated>2014-10-29T23:26:48-05:00</updated>
+    <updated>2014-10-29T21:26:48-07:00</updated>
     <id>http://drupal8notes.github.io/current-path-in-drupal-8</id>
     <content type="html"><![CDATA[<figure class='code'><figcaption><span>How to get the current path</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$current_path</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">request</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getRequestUri</span><span class="p">();</span>
