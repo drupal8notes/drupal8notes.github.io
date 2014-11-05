@@ -4,7 +4,7 @@
   <title><![CDATA[Drupal 8 Notes]]></title>
   <link href="http://drupal8notes.github.io/atom.xml" rel="self"/>
   <link href="http://drupal8notes.github.io/"/>
-  <updated>2014-11-04T21:37:50-08:00</updated>
+  <updated>2014-11-04T21:41:24-08:00</updated>
   <id>http://drupal8notes.github.io/</id>
   <author>
     <name><![CDATA[Arshad Chummun]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Menu_tree() in Drupal 8]]></title>
+    <link href="http://drupal8notes.github.io/menu-tree-in-drupal-8/"/>
+    <updated>2014-11-04T21:39:29-08:00</updated>
+    <id>http://drupal8notes.github.io/menu-tree-in-drupal-8</id>
+    <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="c1">// Format and add main menu to theme.</span>
+</span><span class='line'><span class="nv">$menu</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">menuTree</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">load</span><span class="p">(</span><span class="s1">&#39;main&#39;</span><span class="p">,</span> <span class="k">new</span> <span class="nx">MenuTreeParameters</span><span class="p">());</span>
+</span><span class='line'><span class="nv">$variables</span><span class="p">[</span><span class="s1">&#39;main_menu&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">menuTree</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">build</span><span class="p">(</span><span class="nv">$menu</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Dpm in Drupal 8]]></title>

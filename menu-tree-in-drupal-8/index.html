@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>How to Dpm in Drupal 8 - Drupal 8 Notes</title>
+  <title>Menu_tree() in Drupal 8 - Drupal 8 Notes</title>
   <meta name="author" content="Arshad Chummun">
 
   
@@ -14,15 +14,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://drupal8notes.github.io/how-to-dpm-in-drupal-8">
+  <link rel="canonical" href="http://drupal8notes.github.io/menu-tree-in-drupal-8">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/drupal8notes/atom.xml" rel="alternate" title="Drupal 8 Notes" type="application/atom+xml">
 
   <!-- http://opengraphprotocol.org/ -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://drupal8notes.github.io/how-to-dpm-in-drupal-8">
-  <meta property="og:title" content="How to Dpm in Drupal 8 - Drupal 8 Notes">
+  <meta property="og:url" content="http://drupal8notes.github.io/menu-tree-in-drupal-8">
+  <meta property="og:title" content="Menu_tree() in Drupal 8 - Drupal 8 Notes">
   
 
   <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
@@ -111,41 +111,20 @@
     
     
     <h1 class="entry-title" itemprop="name headline">
-        How to Dpm in Drupal 8
+        Menu_tree() in Drupal 8
         
     </h1>
     
   </header>
 
 
-<div class="entry-content clearfix" itemprop="articleBody description"><p>Looks like <code>dpm()</code> is broken right now in devel. It gives you a WSOD.</p>
-
-<p>Here&rsquo;s some alternatives with the devel module enabled:</p>
-
-<h4>1. Krumo</h4>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nx">krumo</span><span class="p">(</span><span class="nv">$variables</span><span class="p">);</span>
+<div class="entry-content clearfix" itemprop="articleBody description"><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="c1">// Format and add main menu to theme.</span>
+</span><span class='line'><span class="nv">$menu</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">menuTree</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">load</span><span class="p">(</span><span class="s1">&#39;main&#39;</span><span class="p">,</span> <span class="k">new</span> <span class="nx">MenuTreeParameters</span><span class="p">());</span>
+</span><span class='line'><span class="nv">$variables</span><span class="p">[</span><span class="s1">&#39;main_menu&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">menuTree</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">build</span><span class="p">(</span><span class="nv">$menu</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
-
-
-<h4>2. Kint</h4>
-
-<p><a href="http://raveren.github.io/kint/">Kint</a> is a great alternative to Krumo.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nx">kint</span><span class="p">(</span><span class="nv">$variables</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>2. Dump for Twig</h4>
-
-<p>Inside Twig template you can:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{{ dump() }}</span></code></pre></td></tr></table></div></figure>
-
-
 
 </div>
 
@@ -154,7 +133,7 @@
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8notes.github.io/how-to-dpm-in-drupal-8/" data-via="" data-counturl="http://drupal8notes.github.io/how-to-dpm-in-drupal-8/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8notes.github.io/menu-tree-in-drupal-8/" data-via="" data-counturl="http://drupal8notes.github.io/menu-tree-in-drupal-8/" >Tweet</a>
   
   
   
@@ -164,10 +143,8 @@
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/how-to-exclude-or-remove-stylesheets-added-by-core-or-other-modules/" title="Previous Post: How to exclude or remove stylesheets added by core or other modules">&laquo; How to exclude or remove stylesheets added by core or other modules</a></li>
+            <li class="previous"><a href="/how-to-dpm-in-drupal-8/" title="Previous Post: How to dpm in Drupal 8">&laquo; How to dpm in Drupal 8</a></li>
             
-            
-            <li class="next"><a href="/menu-tree-in-drupal-8/" title="Next Post: menu_tree() in Drupal 8">menu_tree() in Drupal 8 &raquo;</a></li>
             
           </ul>
         
@@ -209,8 +186,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://drupal8notes.github.io/how-to-dpm-in-drupal-8/';
-        var disqus_url = 'http://drupal8notes.github.io/how-to-dpm-in-drupal-8/';
+        var disqus_identifier = 'http://drupal8notes.github.io/menu-tree-in-drupal-8/';
+        var disqus_url = 'http://drupal8notes.github.io/menu-tree-in-drupal-8/';
         var disqus_script = 'embed.js';
       
     (function () {

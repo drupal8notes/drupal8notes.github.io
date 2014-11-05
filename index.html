@@ -114,6 +114,36 @@
       </p>
     
     
+      <h2 class="entry-title" itemprop="name headline"><a href="/menu-tree-in-drupal-8/" itemprop="url">Menu_tree() in Drupal 8</a></h2>
+    
+  </header>
+
+
+  <div class="entry-content clearfix" itemprop="articleBody description"><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="c1">// Format and add main menu to theme.</span>
+</span><span class='line'><span class="nv">$menu</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">menuTree</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">load</span><span class="p">(</span><span class="s1">&#39;main&#39;</span><span class="p">,</span> <span class="k">new</span> <span class="nx">MenuTreeParameters</span><span class="p">());</span>
+</span><span class='line'><span class="nv">$variables</span><span class="p">[</span><span class="s1">&#39;main_menu&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">\Drupal</span><span class="o">::</span><span class="na">menuTree</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">build</span><span class="p">(</span><span class="nv">$menu</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h2 class="entry-title" itemprop="name headline"><a href="/how-to-dpm-in-drupal-8/" itemprop="url">How to Dpm in Drupal 8</a></h2>
     
   </header>
@@ -357,6 +387,8 @@
   </div>
   
   <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item " href="/menu-tree-in-drupal-8/">Menu_tree() in Drupal 8</a>
     
     <a class="list-group-item " href="/how-to-dpm-in-drupal-8/">How to Dpm in Drupal 8</a>
     
