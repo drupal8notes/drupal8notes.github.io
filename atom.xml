@@ -4,7 +4,7 @@
   <title><![CDATA[Drupal 8 Notes]]></title>
   <link href="http://drupal8notes.github.io/atom.xml" rel="self"/>
   <link href="http://drupal8notes.github.io/"/>
-  <updated>2014-11-03T20:16:19-08:00</updated>
+  <updated>2014-11-04T21:29:50-08:00</updated>
   <id>http://drupal8notes.github.io/</id>
   <author>
     <name><![CDATA[Arshad Chummun]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Dpm in Drupal 8]]></title>
+    <link href="http://drupal8notes.github.io/how-to-dpm-in-drupal-8/"/>
+    <updated>2014-11-04T21:19:22-08:00</updated>
+    <id>http://drupal8notes.github.io/how-to-dpm-in-drupal-8</id>
+    <content type="html"><![CDATA[<p>Looks like <code>dpm()</code> is broken right now in devel. It gives you a WSOD.</p>
+
+<p>Here&rsquo;s some alternatives with the devel module enabled:</p>
+
+<h4>1. Krumo</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nx">krumo</span><span class="p">(</span><span class="nv">$variables</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>2. Kint</h4>
+
+<p><a href="http://raveren.github.io/kint/">Kint</a> is a great alternative to Krumo.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nx">kint</span><span class="p">(</span><span class="nv">$variables</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>2.Dump for Twig</h4>
+
+<p>Inside Twig template you can:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{{ dump() }}</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Exclude or Remove Stylesheets Added by Core or Other Modules]]></title>

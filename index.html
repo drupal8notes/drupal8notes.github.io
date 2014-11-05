@@ -114,6 +114,57 @@
       </p>
     
     
+      <h2 class="entry-title" itemprop="name headline"><a href="/how-to-dpm-in-drupal-8/" itemprop="url">How to Dpm in Drupal 8</a></h2>
+    
+  </header>
+
+
+  <div class="entry-content clearfix" itemprop="articleBody description"><p>Looks like <code>dpm()</code> is broken right now in devel. It gives you a WSOD.</p>
+
+<p>Here&rsquo;s some alternatives with the devel module enabled:</p>
+
+<h4>1. Krumo</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nx">krumo</span><span class="p">(</span><span class="nv">$variables</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>2. Kint</h4>
+
+<p><a href="http://raveren.github.io/kint/">Kint</a> is a great alternative to Krumo.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nx">kint</span><span class="p">(</span><span class="nv">$variables</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>2.Dump for Twig</h4>
+
+<p>Inside Twig template you can:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{{ dump() }}</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h2 class="entry-title" itemprop="name headline"><a href="/how-to-exclude-or-remove-stylesheets-added-by-core-or-other-modules/" itemprop="url">How to Exclude or Remove Stylesheets Added by Core or Other Modules</a></h2>
     
   </header>
@@ -307,6 +358,8 @@
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/how-to-dpm-in-drupal-8/">How to Dpm in Drupal 8</a>
+    
     <a class="list-group-item " href="/how-to-exclude-or-remove-stylesheets-added-by-core-or-other-modules/">How to Exclude or Remove Stylesheets Added by Core or Other Modules</a>
     
     <a class="list-group-item " href="/current-logged-in-user-in-drupal-8/">Current Logged in User in Drupal 8</a>
@@ -314,8 +367,6 @@
     <a class="list-group-item " href="/how-to-check-for-user-access-in-drupal-8/">How to Check for User Access or Permission in Drupal 8</a>
     
     <a class="list-group-item " href="/how-to-set-active-links-for-menu-items/">How to Set Active Links for Menu Items</a>
-    
-    <a class="list-group-item " href="/current-path-in-drupal-8/">How to Get the Current Path in Drupal 8</a>
     
   </div>
 </section>
