@@ -4,7 +4,7 @@
   <title><![CDATA[Drupal 8 Notes]]></title>
   <link href="http://drupal8notes.github.io/atom.xml" rel="self"/>
   <link href="http://drupal8notes.github.io/"/>
-  <updated>2014-11-04T21:29:50-08:00</updated>
+  <updated>2014-11-04T21:30:11-08:00</updated>
   <id>http://drupal8notes.github.io/</id>
   <author>
     <name><![CDATA[Arshad Chummun]]></name>
@@ -38,7 +38,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h4>2.Dump for Twig</h4>
+<h4>2. Dump for Twig</h4>
 
 <p>Inside Twig template you can:</p>
 
