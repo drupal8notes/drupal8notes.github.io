@@ -114,6 +114,35 @@
       </p>
     
     
+      <h2 class="entry-title" itemprop="name headline"><a href="/html-link-in-twig/" itemprop="url">HTML Link in Twig</a></h2>
+    
+  </header>
+
+
+  <div class="entry-content clearfix" itemprop="articleBody description"><p>In Drupal 7, you could use the <code>array('html' =&gt; TRUE)</code> parameter to make an HTML link. Here&rsquo;s how to do it in Twig.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{{ link(title, url.setOption('html', true)) }}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that url should be an instance of <code>\Drupal\Core\Url</code>.</p>
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h2 class="entry-title" itemprop="name headline"><a href="/menu-tree-in-drupal-8/" itemprop="url">Menu_tree() in Drupal 8</a></h2>
     
   </header>
@@ -387,6 +416,8 @@
   </div>
   
   <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item " href="/html-link-in-twig/">HTML Link in Twig</a>
     
     <a class="list-group-item " href="/menu-tree-in-drupal-8/">Menu_tree() in Drupal 8</a>
     

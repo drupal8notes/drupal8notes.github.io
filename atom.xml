@@ -4,7 +4,7 @@
   <title><![CDATA[Drupal 8 Notes]]></title>
   <link href="http://drupal8notes.github.io/atom.xml" rel="self"/>
   <link href="http://drupal8notes.github.io/"/>
-  <updated>2014-11-04T21:41:24-08:00</updated>
+  <updated>2014-11-04T21:51:17-08:00</updated>
   <id>http://drupal8notes.github.io/</id>
   <author>
     <name><![CDATA[Arshad Chummun]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[HTML Link in Twig]]></title>
+    <link href="http://drupal8notes.github.io/html-link-in-twig/"/>
+    <updated>2014-11-04T21:45:59-08:00</updated>
+    <id>http://drupal8notes.github.io/html-link-in-twig</id>
+    <content type="html"><![CDATA[<p>In Drupal 7, you could use the <code>array('html' =&gt; TRUE)</code> parameter to make an HTML link. Here&rsquo;s how to do it in Twig.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{{ link(title, url.setOption('html', true)) }}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that url should be an instance of <code>\Drupal\Core\Url</code>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Menu_tree() in Drupal 8]]></title>
