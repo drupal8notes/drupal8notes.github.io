@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>module_exists in Drupal 8 - Drupal 8 Notes</title>
+  <title>drupal_get_form in Drupal 8 - Drupal 8 Notes</title>
   <meta name="author" content="Arshad Chummun">
 
   
@@ -14,15 +14,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://drupal8notes.github.io/module-exists-in-drupal-8">
+  <link rel="canonical" href="http://drupal8notes.github.io/drupal-get-form-in-drupal-8">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/drupal8notes/atom.xml" rel="alternate" title="Drupal 8 Notes" type="application/atom+xml">
 
   <!-- http://opengraphprotocol.org/ -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://drupal8notes.github.io/module-exists-in-drupal-8">
-  <meta property="og:title" content="module_exists in Drupal 8 - Drupal 8 Notes">
+  <meta property="og:url" content="http://drupal8notes.github.io/drupal-get-form-in-drupal-8">
+  <meta property="og:title" content="drupal_get_form in Drupal 8 - Drupal 8 Notes">
   
 
   <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
@@ -111,17 +111,23 @@
     
     
     <h1 class="entry-title" itemprop="name headline">
-        module_exists in Drupal 8
+        drupal_get_form in Drupal 8
         
     </h1>
     
   </header>
 
 
-<div class="entry-content clearfix" itemprop="articleBody description"><p>How to check if a module is enabled in Drupal 8:</p>
+<div class="entry-content clearfix" itemprop="articleBody description"><p>In Drupal 8 you use the FormBuilder service to retrieve forms.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>\Drupal::moduleHandler()-&gt;moduleExists('search')</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$form = \Drupal::formBuilder()-&gt;getForm('Drupal\search\Form\SearchBlockForm');</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The argument passed to the getForm() method is the name of the class that defines your form and is an implementation of \Drupal\Core\Form\FormBuilderInterface. If you need to pass any additional parameters to the form, pass them on after the class name.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$form = \Drupal::formBuilder()-&gt;getForm('Drupal\search\Form\SearchBlockForm', $foo);</span></code></pre></td></tr></table></div></figure>
 
 </div>
 
@@ -130,7 +136,7 @@
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8notes.github.io/module-exists-in-drupal-8/" data-via="" data-counturl="http://drupal8notes.github.io/module-exists-in-drupal-8/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8notes.github.io/drupal-get-form-in-drupal-8/" data-via="" data-counturl="http://drupal8notes.github.io/drupal-get-form-in-drupal-8/" >Tweet</a>
   
   
   
@@ -140,10 +146,8 @@
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/html-link-in-twig/" title="Previous Post: HTML link in Twig">&laquo; HTML link in Twig</a></li>
+            <li class="previous"><a href="/module-exists-in-drupal-8/" title="Previous Post: module_exists in Drupal 8">&laquo; module_exists in Drupal 8</a></li>
             
-            
-            <li class="next"><a href="/drupal-get-form-in-drupal-8/" title="Next Post: drupal_get_form in Drupal 8">drupal_get_form in Drupal 8 &raquo;</a></li>
             
           </ul>
         
@@ -185,8 +189,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://drupal8notes.github.io/module-exists-in-drupal-8/';
-        var disqus_url = 'http://drupal8notes.github.io/module-exists-in-drupal-8/';
+        var disqus_identifier = 'http://drupal8notes.github.io/drupal-get-form-in-drupal-8/';
+        var disqus_url = 'http://drupal8notes.github.io/drupal-get-form-in-drupal-8/';
         var disqus_script = 'embed.js';
       
     (function () {

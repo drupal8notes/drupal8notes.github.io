@@ -114,6 +114,39 @@
       </p>
     
     
+      <h2 class="entry-title" itemprop="name headline"><a href="/drupal-get-form-in-drupal-8/" itemprop="url">drupal_get_form in Drupal 8</a></h2>
+    
+  </header>
+
+
+  <div class="entry-content clearfix" itemprop="articleBody description"><p>In Drupal 8 you use the FormBuilder service to retrieve forms.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$form = \Drupal::formBuilder()-&gt;getForm('Drupal\search\Form\SearchBlockForm');</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The argument passed to the getForm() method is the name of the class that defines your form and is an implementation of \Drupal\Core\Form\FormBuilderInterface. If you need to pass any additional parameters to the form, pass them on after the class name.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$form = \Drupal::formBuilder()-&gt;getForm('Drupal\search\Form\SearchBlockForm', $foo);</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
       <h2 class="entry-title" itemprop="name headline"><a href="/module-exists-in-drupal-8/" itemprop="url">module_exists in Drupal 8</a></h2>
     
   </header>
@@ -443,6 +476,8 @@
   </div>
   
   <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item " href="/drupal-get-form-in-drupal-8/">drupal_get_form in Drupal 8</a>
     
     <a class="list-group-item " href="/module-exists-in-drupal-8/">module_exists in Drupal 8</a>
     
