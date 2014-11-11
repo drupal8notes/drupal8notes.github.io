@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>How to contribute - Drupal 8 Notes</title>
+  <title>module_exists in Drupal 8 - Drupal 8 Notes</title>
   <meta name="author" content="Arshad Chummun">
 
   
@@ -14,15 +14,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://drupal8notes.github.io/contribute">
+  <link rel="canonical" href="http://drupal8notes.github.io/module-exists-in-drupal-8">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/drupal8notes/atom.xml" rel="alternate" title="Drupal 8 Notes" type="application/atom+xml">
 
   <!-- http://opengraphprotocol.org/ -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://drupal8notes.github.io/contribute">
-  <meta property="og:title" content="How to contribute - Drupal 8 Notes">
+  <meta property="og:url" content="http://drupal8notes.github.io/module-exists-in-drupal-8">
+  <meta property="og:title" content="module_exists in Drupal 8 - Drupal 8 Notes">
   
 
   <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
@@ -97,130 +97,70 @@
       <div id="main" role="main" class="container">
         <div id="content">
           <div class="row">
-  <div class="page-content col-md-8">
-    <article role="article">
+  <div class="page-content col-md-7" itemscope itemtype="http://schema.org/Blog">
+    <meta itemprop="name" content="Drupal 8 Notes" />
+    
+    <meta itemprop="url" content="http://drupal8notes.github.io" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
       
-        <header class="page-header">
-          
-            <h1 class="entry-title">
-              How to contribute
-              
-            </h1>
-          
-        </header>
-      
-      <div class="entry-content">
-        <h5>Step 1: <a href="https://github.com/drupal8notes/_posts/fork">Click here</a> to fork the _posts repository.</h5>
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+      </p>
+    
+    
+    <h1 class="entry-title" itemprop="name headline">
+        module_exists in Drupal 8
+        
+    </h1>
+    
+  </header>
 
-<h5>Step 2: Run the following code to create a new branch:</h5>
+
+<div class="entry-content clearfix" itemprop="articleBody description"><p>How to check if a module is enabled in Drupal 8:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd _posts
-</span><span class='line'>$ git checkout -b name-of-your-branch</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\Drupal::moduleHandler()-&gt;moduleExists('search')</span></code></pre></td></tr></table></div></figure>
+
+</div>
 
 
-<h5>Step 3: Create a new file for your post:</h5>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ touch YYYY-MM-DD-title-of-your-post.markdown</span></code></pre></td></tr></table></div></figure>
-
-
-<h5>Step 4: Add the following to your new file:</h5>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>---
-</span><span class='line'>layout: post
-</span><span class='line'>title: "Title of your post"
-</span><span class='line'>date: YYYY-MM-DD
-</span><span class='line'>comments: true
-</span><span class='line'>---
-</span><span class='line'>
-</span><span class='line'>Add content here</span></code></pre></td></tr></table></div></figure>
-
-
-<h5>Step 5: Commit and push.</h5>
-
-<h5>Step 6: Create a pull request.</h5>
-
-      </div>
-      
-        <footer>
-          
-            <div class="sharing">
+      <footer>
+        
+          <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8notes.github.io/contribute/index.html" data-via="" data-counturl="http://drupal8notes.github.io/contribute/index.html" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://drupal8notes.github.io/module-exists-in-drupal-8/" data-via="" data-counturl="http://drupal8notes.github.io/module-exists-in-drupal-8/" >Tweet</a>
   
   
   
 </div>
 
-          
-        </footer>
-      
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/html-link-in-twig/" title="Previous Post: HTML link in Twig">&laquo; HTML link in Twig</a></li>
+            
+            
+          </ul>
+        
+      </footer>
     </article>
-    
+  </div>
+
+  
+  <aside class="sidebar col-md-5">
+      
       <section>
-        <h2>Comments</h2>
-        <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <div class="alert alert-info">
+              Is this post incomplete? Want to help? Add a comment below or <a href="/contribute">click here</a> to contribute.
+          </div>
+          <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
       </section>
-    
-  </div>
-
-  
-    <aside class="sidebar col-md-4">
       
-        <section class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Recent Posts</h3>
-  </div>
-  
-  <div id="recent_posts" class="list-group">
-    
-    <a class="list-group-item " href="/module-exists-in-drupal-8/">module_exists in Drupal 8</a>
-    
-    <a class="list-group-item " href="/html-link-in-twig/">HTML link in Twig</a>
-    
-    <a class="list-group-item " href="/menu-tree-in-drupal-8/">menu_tree() in Drupal 8</a>
-    
-    <a class="list-group-item " href="/how-to-dpm-in-drupal-8/">How to dpm in Drupal 8</a>
-    
-    <a class="list-group-item " href="/how-to-exclude-or-remove-stylesheets-added-by-core-or-other-modules/">How to exclude or remove stylesheets added by core or other modules</a>
-    
-    <a class="list-group-item " href="/current-logged-in-user-in-drupal-8/">Current logged in user in Drupal 8</a>
-    
-    <a class="list-group-item " href="/how-to-check-for-user-access-in-drupal-8/">How to check for user access or permission in Drupal 8</a>
-    
-    <a class="list-group-item " href="/how-to-set-active-links-for-menu-items/">How to set active links for menu items</a>
-    
-    <a class="list-group-item " href="/current-path-in-drupal-8/">How to get the current path in Drupal 8</a>
-    
-  </div>
-</section>
-<section class="panel panel-info">
-    <div class="panel-heading">
-        <h3 class="panel-title">Want to help?</h3>
-    </div>
-    <div class="panel-body">
-        <p>This site is hosted on Github. <a href="/contribute">Click here</a> to see how you can help.</p>
-    </div>
-</section>
-
-
-
-
-
-
-      
-    </aside>
+  </aside>
   
 </div>
 
@@ -243,8 +183,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://drupal8notes.github.io/contribute/index.html';
-        var disqus_url = 'http://drupal8notes.github.io/contribute/index.html';
+        var disqus_identifier = 'http://drupal8notes.github.io/module-exists-in-drupal-8/';
+        var disqus_url = 'http://drupal8notes.github.io/module-exists-in-drupal-8/';
         var disqus_script = 'embed.js';
       
     (function () {
